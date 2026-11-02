@@ -11,9 +11,9 @@ Fitur Utama:
 5. **Dark Mode UI:** Desain antarmuka modern yang terinspirasi dari warna khas TikTok.
 
 Teknologi yang Digunakan:
-1. HTML5
-2. CSS3 (Custom Properties, Flexbox, CSS Grid)
-3. Vanilla JavaScript (ES6)
+1. HTML
+2. CSS
+3. Vanilla JavaScript
 
 Cara menjalankan:
 Aplikasi ini berjalan sepenuhnya di sisi klien (*client-side*). Tidak perlu instalasi database atau backend.
