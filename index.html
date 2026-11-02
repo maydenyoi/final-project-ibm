@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TikTok Content Booster</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ==================== HEADER ==================== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand-logo">
+        <span class="logo-dot cyan"></span>
+        <span class="logo-dot pink"></span>
+      </div>
+      <h1 class="site-title">TikTok Content Booster</h1>
+      <p class="site-tagline">Generate viral hooks &amp; captions in seconds ⚡</p>
+    </div>
+  </header>
+
+  <!-- ==================== PAGE WRAPPER (2-column on desktop) ==================== -->
+  <div class="page-wrapper">
+
+    <!-- ==================== LEFT / MAIN COLUMN ==================== -->
+    <main class="main-column">
+
+      <!-- ---------- FORM INPUT SECTION ---------- -->
+      <section class="form-section card" aria-label="Input Generator">
+        <h2 class="section-title">
+          <span class="accent-pink">✦</span> Input Konten
+        </h2>
+
+        <!-- Input topik / kata kunci -->
+        <div class="form-group">
+          <label for="topic-input" class="form-label">Topik Video / Kata Kunci</label>
+          <input
+            type="text"
+            id="topic-input"
+            class="form-control"
+            placeholder="Contoh: Tutorial Jaringan, Review Gaming, Tips Diet..."
+            autocomplete="off"
+          />
+        </div>
+
+        <!-- Baris 2 dropdown: Niche + Tone (side-by-side pada layar besar) -->
+        <div class="form-row">
+          <!-- Dropdown niche / kategori -->
+          <div class="form-group">
+            <label for="niche-select" class="form-label">Niche / Kategori</label>
+            <select id="niche-select" class="form-control form-select">
+              <option value="edukasi">Edukasi</option>
+              <option value="gaming">Gaming</option>
+              <option value="lifestyle">Lifestyle</option>
+              <option value="tech">Tech / Tutorial</option>
+              <option value="storytelling">Storytelling</option>
+            </select>
+          </div>
+
+          <!-- Dropdown gaya bahasa / tone of voice -->
+          <div class="form-group">
+            <label for="tone-select" class="form-label">Gaya Bahasa</label>
+            <select id="tone-select" class="form-control form-select">
+              <option value="casual">Casual &amp; Trendy</option>
+              <option value="witty">Witty &amp; Humorous</option>
+              <option value="formal">Professional &amp; Formal</option>
+              <option value="inspirational">Inspirational</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Baris tombol: Generate + Reset -->
+        <div class="btn-row">
+          <button id="generate-btn" class="btn btn-primary" type="button">
+            <span class="btn-icon">🚀</span>
+            Generate Hook &amp; Caption
+          </button>
+          <button id="reset-btn" class="btn btn-ghost" type="button">
+            <span class="btn-icon">↺</span>
+            Reset
+          </button>
+        </div>
+      </section>
+
+      <!-- ---------- OUTPUT SECTION ---------- -->
+      <section id="output-section" class="output-section hidden" aria-live="polite">
+
+        <!-- Kartu Output 1: Hook Viral -->
+        <article class="card output-card" id="hook-card">
+          <div class="card-header">
+            <h2 class="card-title">
+              <span class="accent-pink">🪝</span> Hook Viral (3 Detik)
+            </h2>
+            <button class="btn btn-copy" id="copy-hook-btn" type="button">Copy</button>
+          </div>
+          <div class="card-body" id="hook-content">
+            <!-- Diisi oleh JavaScript -->
+          </div>
+        </article>
+
+        <!-- Kartu Output 2: Caption & Hashtag -->
+        <article class="card output-card" id="caption-card">
+          <div class="card-header">
+            <h2 class="card-title">
+              <span class="accent-cyan">📝</span> Caption &amp; Hashtag
+            </h2>
+            <button class="btn btn-copy" id="copy-caption-btn" type="button">Copy</button>
+          </div>
+          <div class="card-body" id="caption-content">
+            <!-- Diisi oleh JavaScript -->
+          </div>
+        </article>
+
+      </section>
+
+    </main>
+
+    <!-- ==================== RIGHT COLUMN — History Sidebar ==================== -->
+    <aside class="history-sidebar" id="history-sidebar" aria-label="Riwayat Ide">
+      <div class="history-header">
+        <h2 class="history-title">
+          <span class="accent-cyan">🕐</span> Riwayat Ide
+        </h2>
+        <button id="clear-history-btn" class="btn btn-ghost btn-sm" type="button" title="Hapus semua riwayat">
+          Hapus
+        </button>
+      </div>
+
+      <!-- List item riwayat — diisi oleh JavaScript -->
+      <ul class="history-list" id="history-list" aria-label="Daftar riwayat generate">
+        <!-- Diisi oleh JavaScript -->
+      </ul>
+
+      <!-- Placeholder saat belum ada riwayat -->
+      <p class="history-empty" id="history-empty">
+        Belum ada riwayat.<br/>Klik <strong>Generate</strong> untuk mulai!
+      </p>
+    </aside>
+
+  </div><!-- /.page-wrapper -->
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <p>Made with <span class="accent-pink">♥</span> for TikTok Creators &nbsp;|&nbsp; TikTok Content Booster</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
